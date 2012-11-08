@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="jquery.pjax.js"></script>
+    <script type="text/javascript">
+      $(function() {
+          //$(document).pjax('a', {container: "#content"});
+          //$(document).pjax('a', {container: "#content",fragment: "#content"});
+          //$(document).pjax('a[data-pjax]');
+          //$(document).pjax('a[data-pjax]', {fragment: "#main"});
+       });
+    </script>
+  </head>
+  <body>
+  <a href="/one" >One</a>
+  <a href="/two" >Two</a>
+  <a href="/three" >Three</a>
+  <a href="/four" >Four</a>
+    <%= yield %>
+    <div id="other">
+      <div>
+  </body>
+</html>
